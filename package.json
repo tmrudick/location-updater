@@ -1,0 +1,12 @@
+{
+	"name": "location-updater",
+	"version": "0.0.1",
+	"author": "Tom Rudick <tmrudick@gmail.com>",
+	"description": "A simple module to pull down FourSquare data and update wheretheheckistom.com",
+	"private": true,
+	"dependencies": {
+		"request": "2.12.0",
+		"jade": "0.28.1"
+	},
+	"license": "MIT"
+}
