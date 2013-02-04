@@ -4,6 +4,10 @@
 	"author": "Tom Rudick <tmrudick@gmail.com>",
 	"description": "A simple module to pull down FourSquare data and update wheretheheckistom.com",
 	"bin": { "update-location": "./bin/update-location.js" },
+	"repository": {
+			"type": "git",
+			"url": "https://github.com/tmrudick/location-updater.git"
+		},
 	"private": true,
 	"dependencies": {
 		"request": "2.12.0",
