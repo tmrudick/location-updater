@@ -11,7 +11,7 @@ if (process.argv.length !== 3) {
 var config = require(process.argv[2]);
 
 // Read in the template file
-var template = fs.readFileSync('template.jade');
+var template = fs.readFileSync(__dirname + '/../template.jade');
 
 // Compile the template
 var fn = jade.compile(template);
