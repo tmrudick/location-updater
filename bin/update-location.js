@@ -1,7 +1,14 @@
+#!/usr/bin/env node
+
 var request = require('request'),
 	jade = require('jade'),
-	fs = require('fs'),
-	config = require('./config.json');
+	fs = require('fs');
+
+if (process.argv.length !== 3) {
+	throw new Error("Must provide a configuration file path");
+}
+
+var config = require(process.argv[2]);
 
 // Read in the template file
 var template = fs.readFileSync('template.jade');
